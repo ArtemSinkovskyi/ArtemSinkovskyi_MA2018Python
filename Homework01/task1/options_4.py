@@ -44,15 +44,15 @@ def winner(user):
     computer_input = random.randrange(0, 5, 1)
     print("Computer input: ", number_to_name(computer_input))
     if (user - computer_input) % 5 == 0:
-        return "Dead heat"
+        print("Dead heat")
     if (user - computer_input) % 5 >= 3:
-        return "Computer is winner"
+        print("Computer is winner")
     else:
-        return "You are winner"
+        print("You are winner")
 
 
-print(winner(name_to_number("rock")))
-print(winner(name_to_number("Spock")))
-print(winner(name_to_number("paper")))
-print(winner(name_to_number("lizard")))
-print(winner(name_to_number("scissors")))
+winner(name_to_number("rock"))
+winner(name_to_number("Spock"))
+winner(name_to_number("paper"))
+winner(name_to_number("lizard"))
+winner(name_to_number("scissors"))
