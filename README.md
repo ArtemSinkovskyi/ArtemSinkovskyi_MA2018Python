@@ -1,5 +1,7 @@
 ### SinkovskyiArtem_MA2018Python
 
+## Сheck the code that is marked as (To verify). Thanks.
+
 ## Homework01 Task1 (H01-T1)
 ### option 1: http://www.codeskulptor.org/#user45_rK5aMSOzGDUjqWm.py
 ### option 2: http://www.codeskulptor.org/#user45_I0JDB5C4WicfdWh.py
