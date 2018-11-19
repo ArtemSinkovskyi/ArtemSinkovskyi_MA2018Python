@@ -35,19 +35,31 @@ def your_number(x, y):
     local_x = 30 + (x * 20 - 2)
     local_y = (370 - 4) - (y * 20 - 2)
     if (not initial_button):
-        canvas.create_rectangle(local_x, local_y, local_x + 4, local_y + 4, fill='black')
-        start_x = local_x
-        start_y = local_y
-        initial_button = True
+        if (math.fabs(wine_x - x) < 1.01 and math.fabs(wine_y - y) < 1.01):
+            label_hot_cold.configure(text='YOU WIN', bg='green')
+            canvas.create_rectangle(local_x, local_y, local_x + 4, local_y + 4, fill='black')
+        else:
+            label_hot_cold.configure(text='YOU CHOSE INITIAL POINT', bg='gray')
+            canvas.create_rectangle(local_x, local_y, local_x + 4, local_y + 4, fill='black')
+            start_x = local_x
+            start_y = local_y
+            initial_button = True
     else:
         canvas.create_line(start_x + 2, start_y + 2, local_x + 2, local_y + 2, width=4, fill='black')
-        if (math.fabs(math.hypot(wine_x, wine_y) - math.hypot(start_x, start_y)) > math.fabs(
+        if (math.fabs(wine_x - x) < 1.01 and math.fabs(wine_y - y) < 1.01):
+            label_hot_cold.configure(text='YOU WIN', bg='green')
+        elif (math.fabs(math.hypot(wine_x, wine_y) - math.hypot(start_x, start_y)) > math.fabs(
                 math.hypot(wine_x, wine_y) - math.hypot(local_x, local_y))):
             label_hot_cold.configure(text='HOT', bg='red')
         else:
             label_hot_cold.configure(text='COLD', bg='blue')
         start_x = local_x
         start_y = local_y
+
+
+def answer():
+    answer_x.configure(text=wine_x)
+    answer_y.configure(text=wine_y)
 
 
 label_number_x = Label(root, text='Input your number X:')
@@ -58,6 +70,11 @@ text_number_x.place(x=120, y=10)
 label_hot_cold = Label(root, text='This is your hint, watch me')
 label_hot_cold.place(x=10, y=60)
 
+answer_x = Label(root, text='answer x')
+answer_x.place(x=70, y=130)
+answer_y = Label(root, text='answer y')
+answer_y.place(x=130, y=130)
+
 label_number_y = Label(root, text='Input your number Y:')
 label_number_y.place(x=0, y=30)
 text_number_y = Entry(root)
@@ -66,5 +83,9 @@ text_number_y.place(x=120, y=30)
 btn_way = Button(root, text='Рассчитать')
 btn_way.bind('<Button-1>', lambda event: your_number(float(text_number_x.get()), float(text_number_y.get())))
 btn_way.place(x=10, y=100)
+
+btn_way = Button(root, text='Ответ')
+btn_way.bind('<Button-1>', lambda event: answer())
+btn_way.place(x=10, y=130)
 
 root.mainloop()
