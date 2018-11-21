@@ -8,3 +8,6 @@
 ### option 3: http://www.codeskulptor.org/#user45_ceytDWs132d6qxL.py
 ### option 4 (To verify): https://py3.codeskulptor.org/#user302_eixHvLeSJW6WLIB.py
 ### option 5 (To verify): https://py3.codeskulptor.org/#user302_z5FitAbMbprwzqO.py
+
+## Homework02 Task1 (H02-T1)
+### option(To verify): http://www.codeskulptor.org/#user45_tXw1MyqySS_0.py
