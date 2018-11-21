@@ -10,4 +10,4 @@
 ### option 5 (To verify): https://py3.codeskulptor.org/#user302_z5FitAbMbprwzqO.py
 
 ## Homework02 Task1 (H02-T1)
-### option(To verify): http://www.codeskulptor.org/#user45_af2DUjHEdH_1.py
+### option(To verify): http://www.codeskulptor.org/#user45_af2DUjHEdH_2.py
