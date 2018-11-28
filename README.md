@@ -11,3 +11,6 @@
 
 ## Homework02 Task1 (H02-T1)
 ### option(To verify): http://www.codeskulptor.org/#user45_af2DUjHEdH_2.py
+
+## Homework03 Task1 (H03-T1)
+### option(To verify): https://py3.codeskulptor.org/#user302_rDE7hgfeKN_0.py
