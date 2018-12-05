@@ -16,4 +16,4 @@
 ### option(To verify): https://py3.codeskulptor.org/#user302_S925EhY5VZDfanq.py
 
 ## Homework04 Task1 (H04-T1)
-### option (To verify): https://py3.codeskulptor.org/#user302_ZGJfSBIybr_6.py
+### option (To verify): https://py3.codeskulptor.org/#user302_ZGJfSBIybr_10.py
